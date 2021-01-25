@@ -148,6 +148,439 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/01/25/winfrom-%E5%87%8F%E5%B0%91%E9%97%AA%E7%83%81/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/1.jpeg">
+      <meta itemprop="name" content="Ycq">
+      <meta itemprop="description" content="Test">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Sirius">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/01/25/winfrom-%E5%87%8F%E5%B0%91%E9%97%AA%E7%83%81/" class="post-title-link" itemprop="url">winfrom 减少闪烁</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-01-25 16:47:04 / 修改时间：16:49:34" itemprop="dateCreated datePublished" datetime="2021-01-25T16:47:04+08:00">2021-01-25</time>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>423</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>winfrom 反射实现ListView 和 DataGridView 双缓冲功能</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">lv.GetType().GetProperty(&quot;DoubleBuffered&quot;, BindingFlags.Instance | BindingFlags.NonPublic).SetValue(dgv, true, null);</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">protected override void WndProc(ref Message m)  </span><br><span class="line">&#123;      </span><br><span class="line">	if (m.Msg &#x3D;&#x3D; 0x0014) &#x2F;&#x2F; 禁掉清除背景消息        </span><br><span class="line"> 	return;      </span><br><span class="line">	base.WndProc(ref m);  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">this.SetStyle(ControlStyles.DoubleBuffer |     </span><br><span class="line">	ControlStyles.UserPaint |    </span><br><span class="line">	ControlStyles.AllPaintingInWmPaint,    </span><br><span class="line">	true); </span><br><span class="line">	this.UpdateStyles();</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+
+    <div>
+    
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/01/25/C-%E8%A7%A3%E6%9E%90HTML/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/1.jpeg">
+      <meta itemprop="name" content="Ycq">
+      <meta itemprop="description" content="Test">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Sirius">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/01/25/C-%E8%A7%A3%E6%9E%90HTML/" class="post-title-link" itemprop="url">C# 解析HTML</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-01-25 16:43:09 / 修改时间：16:44:02" itemprop="dateCreated datePublished" datetime="2021-01-25T16:43:09+08:00">2021-01-25</time>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>3.2k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>3 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <ol>
+<li><strong>WebClient</strong><br>下载webpage 到本地或string中</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">System.Net.WebClient client &#x3D; new WebClient();</span><br><span class="line">            byte[] page &#x3D; client.DownloadData(&quot;http:&#x2F;&#x2F;www.google.com&quot;);</span><br><span class="line">            string content &#x3D; System.Text.Encoding.UTF8.GetString(page);</span><br><span class="line">            string regex &#x3D; &quot;href&#x3D;[\\\&quot;\\\&#39;](http:\\&#x2F;\\&#x2F;|\\.\\&#x2F;|\\&#x2F;)?\\w+(\\.\\w+)*(\\&#x2F;\\w+(\\.\\w+)?)*(\\&#x2F;|\\?\\w*&#x3D;\\w*(&amp;\\w*&#x3D;\\w*)*)?[\\\&quot;\\\&#39;]&quot;;</span><br><span class="line">            Regex re &#x3D; new Regex(regex);</span><br><span class="line">            MatchCollection matches &#x3D; re.Matches(content);</span><br><span class="line"></span><br><span class="line">            System.Collections.IEnumerator enu &#x3D; matches.GetEnumerator();</span><br><span class="line">            while (enu.MoveNext() &amp;&amp; enu.Current !&#x3D; null)</span><br><span class="line">            &#123;</span><br><span class="line">                Match match &#x3D; (Match)(enu.Current);</span><br><span class="line">                Console.Write(match.Value + &quot;\r\n&quot;);</span><br><span class="line">            &#125;</span><br></pre></td></tr></table></figure>
+
+<p>根据正则表达式分析，上面是解析 <code>href</code> 的案例。</p>
+<hr>
+<ol start="2">
+<li><strong>Winista.Htmlparser.Net</strong><br>获取HTML 树结构</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">try</span><br><span class="line">    &#123;</span><br><span class="line"></span><br><span class="line">        txtHtmlWhole.Text &#x3D; &quot;&quot;;</span><br><span class="line">        string url &#x3D; CBUrl.SelectedItem.ToString().Trim();</span><br><span class="line">        System.Net.WebClient aWebClient &#x3D; new System.Net.WebClient();</span><br><span class="line">        aWebClient.Encoding &#x3D; System.Text.Encoding.Default;</span><br><span class="line">        string html &#x3D; aWebClient.DownloadString(url);</span><br><span class="line">        txtHtmlWhole.Text &#x3D; html;</span><br><span class="line">    &#125;</span><br><span class="line">    catch (Exception ex)</span><br><span class="line">    &#123;</span><br><span class="line">        MessageBox.Show(ex.Message);</span><br><span class="line">    &#125;</span><br><span class="line">    #endregion</span><br><span class="line"></span><br><span class="line">    #region 分析网页html节点</span><br><span class="line">    Lexer lexer &#x3D; new Lexer(this.txtHtmlWhole.Text);</span><br><span class="line">    Parser parser &#x3D; new Parser(lexer);</span><br><span class="line">    NodeList htmlNodes &#x3D; parser.Parse(null);</span><br><span class="line">    </span><br></pre></td></tr></table></figure>
+<hr>
+<ol start="3">
+<li><strong>HtmlAgilityPack</strong></li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;初始化网络请求客户端</span><br><span class="line">HtmlWeb webClient &#x3D; new HtmlWeb();</span><br><span class="line">&#x2F;&#x2F;初始化文档</span><br><span class="line">HtmlDocument doc &#x3D; webClient.Load(&quot;http:&#x2F;&#x2F;www.cnblogs.com&#x2F;&quot;);</span><br><span class="line">&#x2F;&#x2F;查找节点</span><br><span class="line">HtmlNodeCollection titleNodes &#x3D; doc.DocumentNode.SelectNodes(&quot;&#x2F;&#x2F;a[@class&#x3D;&#39;titlelnk&#39;]&quot;);</span><br><span class="line">if (titleNodes !&#x3D; null)</span><br><span class="line">&#123;</span><br><span class="line">    foreach (var item in titleNodes)</span><br><span class="line">    &#123;</span><br><span class="line">        Console.WriteLine(item.InnerText);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">Console.Read();</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+<ol start="4">
+<li><strong>SgmlReader</strong><br>用这个工具先将html文件转成标准的xml格式文件，再通过制定xpath路径来提取所需要的内容(xpath路径可以通过上面的那个工具生成)。</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line">XPathDocument pathDoc &#x3D; null;</span><br><span class="line">using (SgmlReader sgmlReader &#x3D; new SgmlReader())</span><br><span class="line">&#123;</span><br><span class="line">    sgmlReader.DocType &#x3D; &quot;HTML&quot;;</span><br><span class="line">    sgmlReader.InputStream &#x3D; new StringReader(html);</span><br><span class="line">    using (StringWriter stringWriter &#x3D; new StringWriter())</span><br><span class="line">    &#123;</span><br><span class="line">        using (XmlTextWriter xmlWriter &#x3D; new XmlTextWriter(stringWriter))</span><br><span class="line">        &#123;</span><br><span class="line">            while (!sgmlReader.EOF)</span><br><span class="line">            &#123;</span><br><span class="line">                xmlWriter.WriteNode(sgmlReader, true);</span><br><span class="line">            &#125;</span><br><span class="line">            string xml &#x3D; stringWriter.ToString().Replace(&quot;xmlns&#x3D;\&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;1999&#x2F;xhtml\&quot;&quot;, &quot;&quot;);</span><br><span class="line">            pathDoc &#x3D; new XPathDocument(new StringReader(xml));</span><br><span class="line">        &#125;                    </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">&#x2F;&#x2F;提取出整个table</span><br><span class="line">string xpath &#x3D; &quot;&#x2F;&#x2F;div[@class&#x3D;\&quot;infoList\&quot;]&#x2F;table&quot;;&#x2F;&#x2F;xpath表达式</span><br><span class="line">XPathNavigator nav &#x3D; pathDoc.CreateNavigator();</span><br><span class="line">XPathNodeIterator nodes &#x3D; nav.Select(xpath);</span><br><span class="line">if (!nodes.MoveNext())</span><br><span class="line">&#123;</span><br><span class="line">    return;</span><br><span class="line">&#125;</span><br><span class="line">nodes &#x3D; nodes.Current.Select(&quot;&#x2F;&#x2F;tr&quot;);</span><br><span class="line">if (!nodes.MoveNext()) return;</span><br><span class="line">string str &#x3D; &quot;&quot;;</span><br><span class="line">while (nodes.MoveNext())</span><br><span class="line">&#123;</span><br><span class="line">    &#x2F;&#x2F;遍历所有行</span><br><span class="line">    XPathNodeIterator tdNode &#x3D; nodes.Current.Select(&quot;.&#x2F;td&quot;);</span><br><span class="line">    while (tdNode.MoveNext())</span><br><span class="line">    &#123;</span><br><span class="line">        &#x2F;&#x2F;遍历列</span><br><span class="line">        str +&#x3D; tdNode.Current.Value.Trim() + &quot; &quot;;</span><br><span class="line">    &#125;</span><br><span class="line">    str +&#x3D; &quot;\r\n&quot;;  </span><br><span class="line">&#125;</span><br><span class="line">&#x2F;&#x2F;输出结果</span><br><span class="line">Console.WriteLine(str);</span><br></pre></td></tr></table></figure>
+      
+    </div>
+
+    <div>
+    
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/01/25/Http-server%E6%90%AD%E5%BB%BA%E6%9C%AC%E5%9C%B0%E6%9C%8D%E5%8A%A1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/1.jpeg">
+      <meta itemprop="name" content="Ycq">
+      <meta itemprop="description" content="Test">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Sirius">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/01/25/Http-server%E6%90%AD%E5%BB%BA%E6%9C%AC%E5%9C%B0%E6%9C%8D%E5%8A%A1/" class="post-title-link" itemprop="url">Http-server搭建本地服务</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-01-25 16:41:42 / 修改时间：16:41:50" itemprop="dateCreated datePublished" datetime="2021-01-25T16:41:42+08:00">2021-01-25</time>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>303</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h4 id="1-下载http-server"><a href="#1-下载http-server" class="headerlink" title="1.  下载http-server"></a>1.  下载<code>http-server</code></h4><p>使用<code>npm</code> ，在终端输入</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install http-server -g</span><br></pre></td></tr></table></figure>
+
+<h4 id="2-开启http-server服务"><a href="#2-开启http-server服务" class="headerlink" title="2.  开启http-server服务"></a>2.  开启<code>http-server</code>服务</h4><p>cmd进入目标文件夹，输入：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http-server -c-1 </span><br></pre></td></tr></table></figure>
+
+<p>等待开启，代码提示如下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Starting up http-server, serving .&#x2F;</span><br><span class="line">Available on:</span><br><span class="line">  http:&#x2F;&#x2F;127.0.0.1:8080</span><br><span class="line">  http:&#x2F;&#x2F;192.168.8.196:8080</span><br><span class="line">Hit CTRL-C to stop the server</span><br></pre></td></tr></table></figure>
+
+<h4 id="3-关闭http-server服务"><a href="#3-关闭http-server服务" class="headerlink" title="3. 关闭http-server服务"></a>3. 关闭<code>http-server</code>服务</h4><p>ctrl+c</p>
+<p>中断显示</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http-server stopped.</span><br></pre></td></tr></table></figure>
+
+<p>即服务关闭</p>
+
+      
+    </div>
+
+    <div>
+    
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/01/25/C-Markdown%E6%96%87%E6%9C%AC%E8%BD%AC%E6%8D%A2%E4%B8%BAHTML%E8%AF%AD%E8%A8%80/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/1.jpeg">
+      <meta itemprop="name" content="Ycq">
+      <meta itemprop="description" content="Test">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Sirius">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/01/25/C-Markdown%E6%96%87%E6%9C%AC%E8%BD%AC%E6%8D%A2%E4%B8%BAHTML%E8%AF%AD%E8%A8%80/" class="post-title-link" itemprop="url">C#Markdown文本转换为HTML语言</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-01-25 16:41:03 / 修改时间：16:41:24" itemprop="dateCreated datePublished" datetime="2021-01-25T16:41:03+08:00">2021-01-25</time>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>395</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <ol>
+<li><strong>Markdig</strong></li>
+</ol>
+<p>代码中使用如下:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;str:markdown文本</span><br><span class="line">var pipeline &#x3D; new MarkdownPipelineBuilder().UseAdvancedExtensions().Build();</span><br><span class="line">result &#x3D; Markdown.ToHtml(str, pipeline);</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li><strong>MarkDownSharp</strong></li>
+</ol>
+<p>代码如下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;content:markdown文本 writer：Html结果</span><br><span class="line">using (var reader &#x3D; new StringReader(content))</span><br><span class="line">&#123;</span><br><span class="line">    using (var writer &#x3D; new StringWriter())</span><br><span class="line">    &#123;</span><br><span class="line">        CommonMark.CommonMarkConverter.Convert(reader, writer);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+
+    <div>
+    
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/01/25/Winfrom%E9%87%8D%E7%BB%98ComboBox-DropDownList%E6%A0%B7%E5%BC%8F/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/1.jpeg">
+      <meta itemprop="name" content="Ycq">
+      <meta itemprop="description" content="Test">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Sirius">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/01/25/Winfrom%E9%87%8D%E7%BB%98ComboBox-DropDownList%E6%A0%B7%E5%BC%8F/" class="post-title-link" itemprop="url">Winfrom重绘ComboBox-DropDownList样式</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-01-25 16:39:53 / 修改时间：16:40:29" itemprop="dateCreated datePublished" datetime="2021-01-25T16:39:53+08:00">2021-01-25</time>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>1.7k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>2 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>原生winfrom的ComboBox 样式设置为DropDownList 样式固定，且大多数重绘多为重绘下拉选择框，此代码主要重绘ComboBox的边框 背景色等。</p>
+<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;summary&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> 主要为DropDownList样式重绘(特定性较强)</span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;/summary&gt;</span></span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">partial</span> <span class="keyword">class</span> <span class="title">EVCombobox</span> : <span class="title">ComboBox</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">EVCombobox</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function"></span>    &#123;</span><br><span class="line">        InitializeComponent();</span><br><span class="line">    &#125;</span><br><span class="line">    [<span class="meta">DllImport(<span class="meta-string">&quot;User32.dll&quot;</span>)</span>]</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">extern</span> <span class="keyword">int</span> <span class="title">ReleaseDC</span>(<span class="params">IntPtr hWnd, IntPtr hDC</span>)</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> Color BoardColor &#123; <span class="keyword">get</span>; <span class="keyword">set</span>; &#125; = Color.White;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">WndProc</span>(<span class="params"><span class="keyword">ref</span> Message m</span>)</span></span><br><span class="line"><span class="function"></span>    &#123;</span><br><span class="line">        <span class="keyword">base</span>.WndProc(<span class="keyword">ref</span> m);</span><br><span class="line">        <span class="comment">//WM_PAINT = 0xf; 要求一个窗口重画自己,即Paint事件时</span></span><br><span class="line">        <span class="comment">//WM_CTLCOLOREDIT = 0x133;当一个编辑型控件将要被绘制时发送此消息给它的父窗口；</span></span><br><span class="line">        <span class="comment">//通过响应这条消息，所有者窗口可以通过使用给定的相关显示设备的句柄来设置编辑框的文本和背景颜色</span></span><br><span class="line">        <span class="comment">//windows消息值表,可参考:</span></span><br><span class="line">        <span class="keyword">if</span> (m.Msg == <span class="number">0xf</span> || m.Msg == <span class="number">0x133</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            IntPtr hDC = Win32API.GetWindowDC(m.HWnd);</span><br><span class="line">            <span class="keyword">if</span> (hDC.ToInt32() == <span class="number">0</span>) <span class="comment">//如果取设备上下文失败则返回</span></span><br><span class="line">            &#123;</span><br><span class="line">                <span class="keyword">return</span>;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            <span class="comment">//建立Graphics对像</span></span><br><span class="line">            Graphics g = Graphics.FromHdc(hDC);</span><br><span class="line">            g.FillRectangle(<span class="keyword">new</span> SolidBrush(BackColor), <span class="keyword">new</span> Rectangle(<span class="number">0</span>, <span class="number">0</span>, Width, Height));</span><br><span class="line">            <span class="comment">//画边框的</span></span><br><span class="line">            <span class="comment">//ControlPaint.DrawBorder(g, new Rectangle(0, 0, Width, Height), BoardColor, ButtonBorderStyle.Solid);</span></span><br><span class="line">            <span class="comment">//画坚线</span></span><br><span class="line">            <span class="comment">//ControlPaint.DrawBorder(g, new Rectangle(Width - Height, 0, Height, Height), Color.Red, ButtonBorderStyle.Solid);</span></span><br><span class="line"></span><br><span class="line">            Point pA = <span class="keyword">new</span> Point(Width - <span class="number">20</span>, Height / <span class="number">2</span> - <span class="number">3</span>);</span><br><span class="line">            Point pB = pA + <span class="keyword">new</span> Size(<span class="number">6</span>, <span class="number">6</span>);</span><br><span class="line">            Point pC = pA + <span class="keyword">new</span> Size(<span class="number">12</span>, <span class="number">0</span>);</span><br><span class="line">            g.DrawLine(<span class="keyword">new</span> Pen(Color.White,<span class="number">2</span>), pA, pB);</span><br><span class="line">            g.DrawLine(<span class="keyword">new</span> Pen(Color.White,<span class="number">2</span>), pB, pC);</span><br><span class="line"></span><br><span class="line">            <span class="keyword">if</span> (<span class="keyword">this</span>.SelectedIndex &gt; <span class="number">-1</span>)</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="keyword">string</span> text = SelectedItem.ToString();</span><br><span class="line">                Size strSize = Size.Ceiling(g.MeasureString(text, <span class="keyword">this</span>.Font));</span><br><span class="line">                g.DrawString(text, Font, <span class="keyword">new</span> SolidBrush(ForeColor), <span class="number">5</span>, (Height - strSize.Height) / <span class="number">2</span>);</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            <span class="comment">//g.DrawLine(new Pen(Brushes.Blue, 2), new PointF(this.Width - this.Height, 0), new PointF(this.Width - this.Height, this.Height));</span></span><br><span class="line">            <span class="comment">//释放DC </span></span><br><span class="line">            ReleaseDC(m.HWnd, hDC);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+
+    <div>
+    
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://example.com/2020/09/11/C-%E6%B3%A8%E5%86%8C%E8%A1%A8%E6%93%8D%E4%BD%9C%E7%B1%BB-%E6%9F%A5%E8%AF%A2%E3%80%81%E4%BF%AE%E6%94%B9%E3%80%81%E5%88%A0%E9%99%A4/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -373,9 +806,13 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">7</span>
           <span class="site-state-item-name">日志</span>
         </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">标签</span>
       </div>
   </nav>
 </div>
